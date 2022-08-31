@@ -8,6 +8,16 @@
 
 config_version=5
 
+_global_script_classes=[{
+"base": "CharacterBody2D",
+"class": &"Unit",
+"language": &"GDScript",
+"path": "res://Unit.gd"
+}]
+_global_script_class_icons={
+"Unit": ""
+}
+
 [application]
 
 config/name="Rpg_godot_4"

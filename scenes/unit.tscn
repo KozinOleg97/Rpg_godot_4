@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvjuebdvw5oim"]
+
+[ext_resource type="Script" path="res://Unit.gd" id="1_v5kbf"]
+
+[node name="Unit" type="CharacterBody2D"]
+script = ExtResource("1_v5kbf")
+moveSpeed = null
