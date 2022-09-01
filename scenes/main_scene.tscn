@@ -1,12 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://ulhcxvkwlh5w"]
 
-[ext_resource type="PackedScene" uid="uid://chfhkh4idcvwk" path="res://scenes/player.tscn" id="1_qsbe8"]
+[ext_resource type="PackedScene" uid="uid://ccc0nydx4i7hv" path="res://scenes/game_init.tscn" id="1_3tcf8"]
 [ext_resource type="PackedScene" uid="uid://cug87eg15gacx" path="res://scenes/tile_map.tscn" id="2_xxmnm"]
 
 [node name="MainScene" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("1_qsbe8")]
-position = Vector2(18, 24)
-z_index = 1
+[node name="GameInit" parent="." instance=ExtResource("1_3tcf8")]
 
 [node name="TileMap" parent="." instance=ExtResource("2_xxmnm")]

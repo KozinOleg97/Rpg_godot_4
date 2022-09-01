@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccc0nydx4i7hv"]
+
+[ext_resource type="Script" path="res://scenes/PlayerInit.gd" id="1_takg3"]
+
+[node name="GameInit" type="Node"]
+
+[node name="PlayerInit" type="Node" parent="."]
+script = ExtResource("1_takg3")
+
+[node name="NPCInit" type="Node" parent="."]

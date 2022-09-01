@@ -5,22 +5,9 @@ class_name Unit extends CharacterBody2D
 
 var facingDir = Vector2()
 
+# из-за этого не работает что за  (https://discord.com/channels/212250894228652034/342056330523049988/992538428656848896)??
 func _init(move_speed):
 	self.move_speed = move_speed
+	
 
 
-func _physics_process(delta):
-	
-	
-	var input_direction = Vector2(
-		Input.get_action_strength("move_right") - Input.get_action_strength("move_left"),
-		Input.get_action_strength("move_down") - Input.get_action_strength("move_up")
-	)
-	
-	input_direction = input_direction.normalized()
-	velocity = input_direction * move_speed
-	
-	
-	move_and_slide()
-	
-	
